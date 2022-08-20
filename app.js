@@ -10,5 +10,5 @@ const server = http.createServer((req,res)=>{
   res.write("<html><head><title>"+from+"</title></head><body>");
   res.end('Custom Server! </br>'+req.url +"</body></html>");
 }).listen(port,hostname,(p)=>{
-    console.log(p);
+    console.log("Server Started"); 
 });
