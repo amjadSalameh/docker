@@ -5,7 +5,7 @@ FROM node:alpine
 WORKDIR /app
 
 #OPEN Port On the Container
-ENV PORT=3000
+ENV PORT=8080
 
 #COPY package.json  /app/package.json
 
@@ -22,7 +22,7 @@ CMD [ "node", "app.js" ]
 
 #docker build --tag imagename  dockerfilelocation
 #docker build --tag hello .
-#docker run -p 8080:3000 -d --name hello
+#docker run -p 8080:3000 -d --name hello  image_name
 #docker stop conatiner_name
 #docker ps -a
 #docker start container_name

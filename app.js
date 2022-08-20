@@ -4,8 +4,8 @@ var url= require('url');
 var web= require("./files");
 var events = require("events");
 
-const hostname='127.0.0.1';
-const port=3000;
+const hostname='0.0.0.0';
+const port=8080;
 
 const server = http.createServer((req,res)=>{
   var from = req.headers.from;
