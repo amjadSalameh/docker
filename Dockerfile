@@ -5,7 +5,7 @@ FROM node:alpine
 WORKDIR /app
 
 #OPEN Port On the Container
-ENV PORT=80
+ENV PORT=3000
 
 #COPY package.json  /app/package.json
 
