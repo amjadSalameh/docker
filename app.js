@@ -2,7 +2,6 @@ var http = require('http');
 var hd= require('./myfuncs');
 var url= require('url');
 var web= require("./files");
-var uppercase=require('upper-case');
 var events = require("events");
 
 const hostname='127.0.0.1';
@@ -14,7 +13,7 @@ const server = http.createServer((req,res)=>{
   var file = q.path.substring(1);
 
   var eventEmitter = new events.EventEmitter();
-  
+
   if(file){
      
      web.myweb(file,req,res);

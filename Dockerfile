@@ -23,3 +23,8 @@ CMD [ "node", "app.js" ]
 #docker build --tag imagename  dockerfilelocation
 #docker build --tag hello .
 #docker run -p 8080:3000 -d --name hello
+#docker stop conatiner_name
+#docker ps -a
+#docker start container_name
+#docker logs container_name
+
