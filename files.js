@@ -1,4 +1,5 @@
 const files = require("fs");
+
 exports.myweb = (index, req,res)=>{
     if(index=="index.html" || index=="index"||index=="default" || index=="home"){
         files.readFile("index.html",(err,data)=>{
