@@ -8,7 +8,7 @@ const server = http.createServer((req,res)=>{
   res.statusCode = 200;
   res.setHeader('Content-Type','txt/html');
   res.write("<html><head><title>"+from+"</title></head><body>");
-  res.end('Welcom to first node application! </br>'+req.url +"</body></html>");
+  res.end('Custom Server! </br>'+req.url +"</body></html>");
 }).listen(port,hostname,(p)=>{
     console.log(p);
 });
