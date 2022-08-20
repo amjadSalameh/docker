@@ -2,6 +2,8 @@ var http = require('http');
 var hd= require('./myfuncs');
 var url= require('url');
 var web= require("./files");
+var uppercase=require('upper-case');
+var events = require("events");
 
 const hostname='127.0.0.1';
 const port=8080;
@@ -10,20 +12,25 @@ const server = http.createServer((req,res)=>{
   var from = req.headers.from;
   var q = url.parse(req.url,true);
   var file = q.path.substring(1);
+
+  var eventEmitter = new events.EventEmitter();
+  
   if(file){
-    web.myweb(file,req,res);
+     
+     web.myweb(file,req,res);
   }
   else{
     res.writeHead(200,{"Content-Type":"text/html"});
     res.write("<html><head><title></title></head><body>");
-    res.end(
+    res.end(uppercase.upperCase(
       '</br>host: ' + q.host +
     '</br>hostname: ' + q.hostname +
     '</br>href: ' + q.href +
     '</br>path: ' + q.path +
-    //'</br>query: ' + q.query.toString() +
+    '</br>query.month: ' + q.query.month +
+    '</br>query.year : ' + q.query.year +
     '</br>' + hd.hDate() +
-    "</body></html>");
+    "</body></html>"));
   }
   /* 
   res.statusCode = 200;

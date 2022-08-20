@@ -3,7 +3,7 @@ exports.myweb = (index, req,res)=>{
     if(index=="index.html" || index=="index"||index=="default" || index=="home"){
         files.readFile("index.html",(err,data)=>{
             if(err){
-                res.writeHead(300,{"Content-Type":"text/html"});
+                res.writeHead(404,{"Content-Type":"text/html"});
                 return res.end("cannot find resource!"); 
             }
             else{
