@@ -19,3 +19,6 @@ COPY . /app
 # CMD ["node", "app.js"]
 # CMD  node app.js
 CMD [ "node", "app.js" ]
+
+#docker build --tag imagename  dockerfilelocation
+#docker build --tag hello .
