@@ -1,15 +1,15 @@
-/*const http = require('http');
+import { createServer } from 'http';
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Welcom to first node application!');
+
+  res.end('Welcom to first node application! </br>'+req.url);
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
-});*/
-console.log("Hello World");
+});
