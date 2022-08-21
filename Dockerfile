@@ -28,3 +28,8 @@ CMD [ "node", "app.js" ]
 #docker start container_name
 #docker logs container_name
 
+#push images to hub.docker:
+#docker push accountname/reponame:tagname
+#docker tag hi amjedsalameh/h-i
+#eg: docker push amjedsalameh/
+# docker pull amjedsalameh/h-i:latest
