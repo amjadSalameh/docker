@@ -1,4 +1,4 @@
-version: '1'
+version: '3.3'
 
 services:
   web:
@@ -11,4 +11,5 @@ services:
 
 
 # docker-compose up -d :create/build images and start containers
+#docker-compose down : stop the services
 # docker-compose build :build or rebuild services
