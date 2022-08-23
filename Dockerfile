@@ -13,7 +13,7 @@ ENV PORT=8080
 
 #Copy all files and directories from current location to the container 
 #location  COPY  SOURCE  DESTENATION
-COPY . /app
+COPY ./src/ /app
 
 #Command To Execute when Container started
 # CMD ["node", "app.js"]
@@ -33,3 +33,5 @@ CMD [ "node", "app.js" ]
 #docker tag hi amjedsalameh/h-i
 #eg: docker push amjedsalameh/
 # docker pull amjedsalameh/h-i:latest
+#https://gist.github.com/adamveld12/4815792fadf119ef41bd
+#https://mehlj.github.io/Dockerfile/
