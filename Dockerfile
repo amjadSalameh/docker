@@ -35,3 +35,4 @@ CMD [ "node", "app.js" ]
 # docker pull amjedsalameh/h-i:latest
 #https://gist.github.com/adamveld12/4815792fadf119ef41bd
 #https://mehlj.github.io/Dockerfile/
+# docker login -u username
