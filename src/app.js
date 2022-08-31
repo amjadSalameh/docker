@@ -13,9 +13,8 @@ const server = http.createServer((req,res)=>{
   var file = q.path.substring(1);
 
   var eventEmitter = new events.EventEmitter();
-
+  console.log("anew request arrived:"+file);
   if(file){
-     
      web.myweb(file,req,res);
   }
   else{
